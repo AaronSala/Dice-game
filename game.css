@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #223;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+
+ .dice .fas{
+    font-size: 5rem;
+    background: red;
+    color: #ddd;
+    border-radius: 18px;
+    display: none;
+}
+.fas.active {
+    position: absolute;
+    top: 14rem;
+    right: 48%;
+    display: block;
+    transform: rotate(180deg);
+    transition: 1s ease;
+}
+.hidden{
+    display: none;
+}
+
+.player1 i:hover{
+    transform: rotate(100deg);
+}
+.container{
+   position: relative;
+    display: flex;
+    margin:4rem;
+    width: 85%;
+    height: 50vh;
+    justify-content: center;
+
+}
+
+ h2{
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.8rem;
+}
+.score{
+    text-align: center;
+    font-size: 5.4rem;
+    color: #ee9112;
+}
+.currentScore{
+    
+    text-align: center;
+    padding-top: 1.3rem;
+    background: #222;
+    height: 6.7rem;
+    width: 11rem;
+    border-radius: 9px;
+    color: #bbb;
+    margin-top: 5rem;
+}
+.currentScore span{
+    font-size: 2.3rem;
+    
+}
+
+.player1 {
+    background: rgba(192, 192, 192, 0.3);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    align-items: center;
+    
+}
+.player2 {
+    background: #444;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    align-items: center;
+
+}
+.btn.btn--new{
+    position: absolute;
+    top: 5rem;
+    width: 7rem;
+    height: 2.3rem;
+    background: #44ef2e;
+    border-radius: 5px;
+}
+.btn.btn--roll {
+    position: absolute;
+    top: 25rem;
+  
+    width: 7rem;
+    height: 2.3rem;
+    background: lightgreen;
+    border-radius: 5px;
+}
+.btn.btn--hold {
+    position: absolute;
+    top: 29rem;
+   
+    width: 5rem;
+    height: 2.3rem;
+    background: pink;
+    border-radius: 5px;
+}
+
+.btn{
+    cursor: pointer;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
