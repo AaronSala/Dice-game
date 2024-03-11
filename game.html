@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dice-Game</title>
-    <link rel="stylesheet" href="game.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"  />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="game.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <script src="game.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-    <section class="player player1 player--active">
-       <h2 class="naame" id="name--0">PLAYER 1</h2>
+      <section class="player player0 player--active">
+        <h2 class="name" id="name--0">PLAYER 1</h2>
         <div class="score" id="score--0">54</div>
         <div class="currentScore">
-             <h3 class="current-label">CURRENT</h3>
-             <span class="current-score" id="current--0">0</span>
+          <h3 class="current-label">CURRENT</h3>
+          <span class="current-score" id="current--0">0</span>
         </div>
-    </section>
+      </section>
 
-    <section class="player player2">
-      <h2 class="name" id="player--1">PLAYER 2</h2>
-      <div class="score" id="score--1">36</div>
+      <section class="player player1">
+        <h2 class="name" id="name--1">PLAYER 2</h2>
+        <div class="score" id="score--1">36</div>
         <div class="currentScore">
-            <h3 class="current-lebal" >CURRENT</h3>
-          <span class="current-score" id="current--1">0</span>  
+          <h3 class="current-lebal">CURRENT</h3>
+          <span class="current-score" id="current--1">0</span>
         </div>
-    </section>
-    
-   
-    <button class="btn btn--new">NEW GAME</button>
-    <button class="btn btn--roll">ROLL DICE</button>
-    <button class="btn btn--hold">HOLD</button>
-    <div class="dice" >
-        <i class="fas fa-dice-one "></i>
+      </section>
+
+      <button class="btn btn--new">NEW GAME</button>
+      <button class="btn btn--roll">ROLL DICE</button>
+      <button class="btn btn--hold">HOLD</button>
+      <div class="dice">
+        <i class="fas fa-dice-one"></i>
         <i class="fas fa-dice-two"></i>
         <i class="fas fa-dice-three"></i>
         <i class="fas fa-dice-four"></i>
         <i class="fas fa-dice-five"></i>
         <i class="fas fa-dice-six"></i>
+      </div>
     </div>
-     </div>
-</body>
+  </body>
 </html>

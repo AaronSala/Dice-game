@@ -78,7 +78,7 @@ background: rgba(192, 192, 192, 0.2);
 .player--active {
     background: rgba(192, 192, 192, 0.7);
 }
-.player1 {
+.player0 {
     
     width: 50%;
     display: flex;
@@ -87,7 +87,7 @@ background: rgba(192, 192, 192, 0.2);
     align-items: center;
     
 }
-.player2 {
+.player1 {
     
     width: 50%;
     display: flex;
@@ -127,4 +127,21 @@ background: rgba(192, 192, 192, 0.2);
     cursor: pointer;
     font-size: medium;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@keyframes blink{
+0% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: #44ef2e;;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+.player--winner {
+    background: #44ef2e;
+    animation: blink 2s infinite;
 }
